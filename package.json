@@ -1,0 +1,14 @@
+{
+  "name": "instagram-clone-mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \" yarn run backend \" \" yarn run frontend \"  ",
+    "backend": "cd backend && nodemon index.js",
+    "frontend": "cd frontend && yarn start"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
